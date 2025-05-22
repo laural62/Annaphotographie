@@ -11,9 +11,8 @@
 <!--Création du header avec le logo-->
     <body>
         <header>
-            <div class="linklogo">
-                <img class="logo" src="image/logo_anna.png">
-            </div>
+            <img class="logo" src="image/logo_anna.png">
+
             <!--barre de navigation entre les sections-->
             <nav>
                 <a href="#section_top">Acceuil</a>
@@ -28,7 +27,7 @@
             <section id="section_top">
                 <h1>Bienvenue sur le site de Anna Photographie</h1>
                 <h2>Vous cherchez à capturer des moments uniques ? ne cherchez plus, vous êtes au bon endroit.</h2>
-                <a class="bouton" href="section_presentation">En savoir +</a>
+                <a class="bouton" href="#section_presentation">En savoir +</a>
                 <div>
                     <img class="topimg" src="image/anna3.png">
                 </div>
@@ -41,8 +40,8 @@
                     spéciaux dans votre vie, vous êtes au bon endroit.
                 </p>
             <div>
-                <a class="bouton" href="section_propos">A Propos</a>
-                <a class="bouton" href="section_pourquoi">Pourquoi Anna ?</a>
+                <a class="bouton but" href="#section_propos">A Propos</a>
+                <a class="bouton but" href="#section_pourquoi">Pourquoi Anna ?</a>
             </div>
             </section>
 
@@ -54,8 +53,8 @@
                     se consacre à créer des images qui racontent une histoire unique à chaque client.
                 </p>
             <div>
-                <a class="bouton" href="section_service">Service</a>
-                <a class="bouton" href="section_contact">Contact</a>
+                <a class="bouton" href="#section_service">Service</a>
+                <a class="bouton" href="#section_contact">Contact</a>
             </div>
             </section>
 
@@ -106,17 +105,15 @@
                         <p>Anna à un talent ppour la photographie artistique, créant des images uniques et captivantes qui vous émerveilleront.</p>
                     </div>
                 </div>
-            <div>
-                <a class="bouton" href="section_pourquoi">Pourquoi</a>
-                <a class="bouton" href="section_contact">Contact</a>
-            </div>
+                <div>
+                    <a class="bouton" href="#section_pourquoi">Pourquoi</a>
+                    <a class="bouton" href="#section_contact">Contact</a>
+                </div>
             </section>
 
             <section id="section_pourquoi">
-                <div class="anna">
-                    <h2>Pourquoi Anna ?</h2>
-                </div>
-
+                <h2>Pourquoi Anna ?</h2>
+                
                 <div class="talent">
                     <h3>Talent Artistique</h3>
                     <p>Anna posséde un oeil artistique exceptionnel et sait comment jouer avec la lumiére et les angles pour créer 
@@ -143,23 +140,77 @@
                     <p>Les photos d'Anna deviennent des souvenirs intemporels que vous chérirez toute votre vie.
                     </p>
                 </div>
-            <div>
-                <a class="bouton" href="section_top">Accueil</a>
-                <a class="bouton" href="section_contact">Contact</a>
-            </div>
+                    <div>
+                        <a class="bouton" href="#section_top">Accueil</a>
+                        <a class="bouton" href="#section_contact">Contact</a>
+                    </div>
             </section>
 
             <section id="section_contact">
-                
-            <div>
-                <a class="bouton" href="section_Top">Acceuil</a>
+                <h2>Contacter</h2>
+                <p>Si vous souhaitez en savoir plus sur les services d'Anna ou prendre rendez-vous pour une séance
+                    photo, n'hésitez pas à la contacter dés aujourd'hui. Chaque moment mérite d'être capturé, et Anna est là pour 
+                    faire de chaque instant un souvenir inoubliable.
+                </p>
+                <form class="card-contact">
+                    <label>Nom *</label>
+                    <input type="text" required placeholder="Saisissez votre Nom...">
+
+                    <label>Prénom *</label>
+                    <input type="text" required placeholder="Saisissez votre Prénom">
+
+                    <label>Email *</label>
+                    <input type="email" required placeholder="Saisissez votre e-mail">
+
+                    <label>Téléphone</label>
+                    <input type="tel" required placeholder="Saisissez votre numéro de Téléphone..">
+
+                    <select>
+                        <option>Objet</option>
+                        <option>Devis</option>
+                        <option>Renseignement</option>
+                        <option>Rendez-vous</option>
+                        <option>Autre</option> 
+                    </select>
+
+                    <label>Message *</label>
+                    <textarea type="text" required placeholder="Saisissez votre message.."></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+            <div class="color">
+                <h3>Anna Photographie</h3>
+                <p>ZAC DU 14 Juillet,<br>62223 Saint-Laurent-Blangy</p>
+                <a href="tel:+33321000000" >03.21.00.00.00</a>
+                <a href="mailto:contact@anna-photographie.com">Contact@anna-photographie.com</a>
             </div>
+
+          
+                <a class="retour" href="#section_Top">Acceuil</a>
+            
             </section>
             
         </main>
 
         <footer><!--barre de footer avec rappel nav + logo + copyright+réseau sociaux-->
+            <ul>
+                <li><a href="#section_top">Accueil</a></li>
+                <li><a href="#section_propos">A Propos</a></li>
+                <li><a href="#section_presentation">Présentation</a></li>
+                <li><a href="#section_service">Service</a></li>
+                <li><a href="#section_contact">Contact</a></li>
+            </ul>
 
+            <div class="linklogo">
+                <img src="image/logo_anna.png">
+                <i>Copyright Anna photographie 2025</i>
+            </div>
+
+            <div>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x" style="color: #000000;"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram fa-2x" style="color: #000000;"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-square-x-twitter fa-2x" style="color: #000000;"></i></a>
+            </div>
         </footer>
     </body>
 </html>
